@@ -1,0 +1,81 @@
+import random as r
+from time import*
+
+def start():
+    print('Введи левую границу игры:', end = '\n')
+    left_side = input()
+    print('Введи правую границу игры', end = '\n')
+    right_side = input()
+    if check_digits(left_side, right_side) is True:
+        left_side, right_side = int(left_side), int(right_side)
+        main_game(left_side, right_side)
+
+def main_game(x, y):
+    if x > y:
+        x, y = y, x
+        rand_num = r.randint(x, y)
+        print(f"Угадай число от {x} до {y}", end = '\n')
+    else:
+        rand_num = r.randint(x, y)
+        print(f"Угадай число от {x} до {y}", end = '\n')
+    cnt = 0
+    while True:
+        sup = input()
+        if check_digit(sup):
+            suppose = int(sup)
+        cnt += 1
+        if suppose > rand_num:
+            print('Ваше число больше загаданного, попробуйте еще разок')
+        elif suppose < rand_num:
+            print('Ваше число меньше загаданного, попробуйте еще разок')
+        elif suppose == rand_num:
+            if cnt == 1:
+                print('Ты супер! У тебя получилось угадать с первого раза, молодчина!', 'Количество попыток:', cnt, end = '\n')
+                print('Хочешь сыграть еще раз? Ответь "ДА" или "НЕТ"')
+                answer2 = input()
+                if answer2.lower() == 'да':
+                    start()
+                else:
+                    print('До новых встреч !')
+                    break
+            elif 1 < suppose <= 5:
+                print('Неплохо, хочешь снова испытать свои силы?', 'Количество попыток:', cnt,  end = '\n')
+                answer2 = input()
+                if answer2.lower() == 'да':
+                    start()
+                else:
+                    print('До новых встреч !')
+                    break
+            else:
+                print('Ты угадал ! Хочешь попробовать снова?','Количество попыток:', cnt, end = '\n')
+                answer2 = input()
+                if answer2.lower() == 'да':
+                    start()
+                else:
+                    print('До новых встреч !')
+                    break
+
+def check_digit(digit):
+    if digit.isdigit() == False:
+        print('Ты ввел не число. Попробуй еще раз')
+        start()
+    else:
+        return True
+
+def check_digits(x, y):
+    if x == y:
+        print('Числа одинаковы , попробуй еще раз')
+        start()
+    if x.isdigit == False or y.isdigit == False:
+        print('Ты ввел не числа, попробуй еще раз')
+        start()
+    else:
+        return True
+
+
+print('Привет! Хочешь попробовать угадать загаданную мною число? Ответь "ДА" или "НЕТ"', end='\n')
+answer = input()
+if answer.lower() == "да":
+    start()
+else:
+    print('Как жаль, я думал мы с тобой сможем поиграть')
