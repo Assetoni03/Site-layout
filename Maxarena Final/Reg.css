@@ -1,0 +1,194 @@
+body{
+    background-image: url("REGPAGE.jpg");
+    background-size: cover;
+
+}
+* {
+    box-sizing: border-box;
+}
+main {
+    margin-top: 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#Username{
+
+}
+#ConfirmPassword{
+
+}
+#Email{
+
+}
+#Password{
+
+}
+.navbar-toggler-icon{
+    background-image: url("Images/Logopink.jpg");
+}
+/* Register page */
+.register-form-container {
+    margin-top: 5%;
+    max-width: 415px;
+    width: 100%;
+    background: blueviolet;
+    box-shadow: 0 6px 50px rgba(255,255,255, 0.7);
+    border-radius: 20px;
+    padding: 38px 30px 38px 30px;
+}
+
+.fieldtitle {
+    color: white;
+    text-shadow: black 2px 2px 10px;
+    font-weight: 500;
+    margin-left: 0;
+    font-size: 20px;
+    line-height: 23px;
+    margin-bottom: 38px;
+    font-family: 'Press Start 2P', cursive ;
+}
+
+input {
+    height: 45px;
+    width: 100%;
+    color: #3B5983;
+    font-size: 14px;
+    line-height: 16px;
+    border: 2px solid #E9F2FF;
+    border-radius: 5px;
+    padding-left: 25px;
+}
+input:focus {
+    outline: none;
+    border: 2px solid #C1D9FD;
+}
+input:valid {
+    border-color: pink;
+}
+input:invalid {
+    border-color: orange;
+}
+input:not(:focus):invalid {
+    border-color: #C1D9FD;
+}
+#pageend{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.divider {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: white;
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+    padding-top: 17px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-bottom: 10px;
+}
+.button-google {
+    color: white;
+    background: deepskyblue;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    display:block;
+    height: 45px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 45px;
+    cursor: pointer;
+    border: none;
+    width: 100px;
+
+}
+
+.buttons-page{
+    width: 100px;
+    position: center;
+    font-weight: bold;
+    font-size: 14px;
+    display:block;
+    height: 45px;
+    background: darkorange;
+    border-radius: 5px;
+    color:#fff;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 45px;
+    cursor: pointer;
+    border: none;
+}
+.BUTTONS{
+    display: flex;
+    justify-content: center;
+}
+.fieldform {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 22px;
+}
+#Unamealert{
+    display: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#Emailalert{
+    display: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#Passwordalert{
+    display: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#PasswordConfirmalert{
+    display: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.alertimg{
+    height:20px;
+    width: 20px;
+}
+.alerttxt{
+    font-size: 15px;
+    color: white;
+    text-shadow: 0px 0px 2px red;
+    margin-bottom: 0;
+}
+/* Register page */
+@media(max-width: 1230px) {
+    .intro{max-height: 600px;}
+    .intro-text{font-size: 55px;justify-content: center; justify-items: center;}
+    .intro-text2{font-size: 35px;justify-content: center; justify-items: center;}
+}
+@media(max-width: 990px) {
+    .blast{height: 55px;}
+    .button-google{font-size: 10px;}
+    .buttons-page{font-size: 10px;}
+    .intro{max-height: 600px;}
+    .intro-text{font-size: 50px;justify-content: center; justify-items: center}
+    .intro-text2{font-size: 30px;justify-content: center; justify-items: center}
+}
+@media(max-width: 770px) {
+    .blast{height: 50px;}
+    .intro{max-height: 500px;}
+    .intro-text{font-size: 45px;}
+    .intro-text2{font-size: 25px;}
+}
+@media (max-width: 500px) {
+    .navbar-nav{font-size: 15px;}
+}
+@media (max-width: 575px) {
+    .blast{height: 0px;}
+}

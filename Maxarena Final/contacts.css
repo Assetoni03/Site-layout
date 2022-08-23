@@ -1,0 +1,73 @@
+body {
+    background: url("Images/cybeerclub.png");
+    background-size: cover;
+    font-family: 'Righteous', cursive;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+/*   Contacts page */
+
+
+.contacts {
+    width:100%;
+}
+
+.wrap {
+    width: 900px;
+    margin: 0 auto;
+}
+.panel {
+    width: 900px;
+    font-size: 18px;
+    background-color: #fff;
+    border: 1px solid transparent;
+    border-bottom-width: 2px;
+    border-radius: 3px;
+}
+
+.information_contacts {
+    color: #000;
+    padding-top: 150px;
+    text-align: center;
+}
+
+.link_name, .link_email {
+    text-decoration: none;
+    text-decoration-color: orange;
+    color: orange;
+}
+
+/*   Contacts page */
+
+
+@media(max-width: 1230px) {
+    .intro{max-height: 600px;}
+    .intro-text{font-size: 55px;justify-content: center; justify-items: center;}
+    .intro-text2{font-size: 35px;justify-content: center; justify-items: center;}
+    .panel{width: 990px;}
+}
+@media(max-width: 990px) {
+    .blast{height: 55px;}
+    .intro{max-height: 600px;}
+    .intro-text{font-size: 50px;justify-content: center; justify-items: center}
+    .intro-text2{font-size: 30px;justify-content: center; justify-items: center}
+    .panel{width: 770px;}
+}
+@media(max-width: 770px) {
+    .blast{height: 50px;}
+    .intro{max-height: 500px;}
+    .intro-text{font-size: 45px;}
+    .intro-text2{font-size: 25px;}
+    .panel{width: 500px; font-size: 15px}
+}
+@media (max-width: 500px) {
+    .navbar-nav{font-size: 15px;}
+    .panel{width: 400px;
+        font-size: 15px;}
+}
+@media (max-width: 575px) {
+    .blast{height: 0px;}
+}

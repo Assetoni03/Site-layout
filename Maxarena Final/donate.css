@@ -1,0 +1,108 @@
+body {
+    background: url("https://images3.alphacoders.com/774/thumb-1920-774574.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    width:100%;
+    height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+/*  Header */
+.blast{
+    height: 60px;
+}
+.first_item_header{
+    margin-left: 800px;
+}
+
+.collapse{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.nav-link{
+    color: blueviolet;
+    text-shadow: 1px 1px violet;
+}
+
+.navbar-toggler-icon{
+    background-image: url("Images/Logoviolet.jpg");
+}
+.navbar-nav{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-family: Righteous;
+    justify-content: space-evenly;
+    font-size: 20px;
+}
+.nav-link::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    opacity: 0;
+    background-color: violet;
+    position: static;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    transition: opacity 0.1s linear;
+}
+
+.nav-link:hover {
+    color: violet;
+    text-shadow: 1px 1px blueviolet;
+}
+
+.nav-link:hover::after {
+    opacity: 1;
+}
+.navbar{
+    background-color: floralwhite;
+    border-bottom: 4px solid blueviolet;
+}
+/*  Header */
+
+  /* INTRO */
+/* Donate Page*/
+.donate_system {
+    color: floralwhite;
+    font-family: Righteous;
+    text-shadow: 2px 2px 2px blueviolet;
+    text-align: center;
+    margin-top: 30vh;
+
+}
+
+/* Donate Page*/
+@media(max-width: 1230px) {
+    .intro{max-height: 600px;}
+    .intro-text{font-size: 55px;justify-content: center; justify-items: center;}
+    .intro-text2{font-size: 35px;justify-content: center; justify-items: center;}
+    .donate_system{margin-top: 30vh;}
+}
+@media(max-width: 990px) {
+    .blast{height: 55px;}
+    .intro{max-height: 600px;}
+    .intro-text{font-size: 50px;justify-content: center; justify-items: center}
+    .intro-text2{font-size: 30px;justify-content: center; justify-items: center}
+    .donate_system{margin-top: 25vh;}
+}
+@media(max-width: 770px) {
+    .blast{height: 50px;}
+    .intro{max-height: 500px;}
+    .intro-text{font-size: 45px;}
+    .intro-text2{font-size: 25px;}
+    .donate_system{margin-top: 20vh;}
+}
+@media (max-width: 500px) {
+    .navbar-nav{font-size: 15px;}
+    .donate_system{margin-top: 15vh;}
+}
+@media (max-width: 575px) {
+    .blast{height: 0px;}
+}

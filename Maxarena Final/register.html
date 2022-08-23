@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon-32x32.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Reg.css">
+    <link href="style.css" rel="stylesheet">
+    <title>Registration</title>
+</head>
+
+<body>
+<!------------------------Navigation Bar--------------------------->
+
+<nav class="navbar navbar-expand-sm">
+    <a class="navbar-brand" href="index.html"><img class="blast" src="Images/Logoblack.png"> </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="navbar-collapse" id="navbarTogglerDemo02">
+        <div class="navbar-nav">
+            <div class="nav-item nav-link">Home</div>
+            <div class="nav-item nav-link">About us</div>
+            <div class="nav-item nav-link">Contacts</div>
+            <div class="nav-item nav-link">Register</div>
+        </div>
+    </div>
+</nav>
+<script src="index.js"></script>
+    <main>
+        <div class="register-form-container">
+            <h1 class="fieldtitle">
+                Registration
+            </h1>
+            <div>
+                <div class="fieldform">
+                    <input id="Username" type="text" placeholder="Username">
+                    <div id="Unamealert">
+                        <img class="alertimg"src="https://cdn2.iconfinder.com/data/icons/freecns-cumulus/32/519791-101_Warning-1024.png">
+                        <p class="alerttxt">Username should be entered!</p>
+                    </div>
+                </div>
+                <div class="fieldform">
+                    <input id="Email" type="email" placeholder="Email">
+                    <div id="Emailalert">
+                        <img class="alertimg"src="https://cdn2.iconfinder.com/data/icons/freecns-cumulus/32/519791-101_Warning-1024.png">
+                        <p class="alerttxt">Email should be entered!</p>
+                    </div>
+                </div>
+                <div class="fieldform">
+                    <input id="Password" type="password" placeholder="Password">
+                    <div id="Passwordalert">
+                        <img class="alertimg"src="https://cdn2.iconfinder.com/data/icons/freecns-cumulus/32/519791-101_Warning-1024.png">
+                        <p class="alerttxt">Password should be entered!</p>
+                    </div>
+                </div>
+                <div class="fieldform">
+                    <input id="ConfirmPassword" type="password" placeholder="Confirm Password">
+                    <div id="PasswordConfirmalert">
+                        <img class="alertimg"src="https://cdn2.iconfinder.com/data/icons/freecns-cumulus/32/519791-101_Warning-1024.png">
+                        <p class="alerttxt">Passwords are not same!</p>
+                    </div>
+                </div>
+            </div>
+            <div id="pageend">
+                <div class="BUTTONS">
+                    <div class="d-grid gap-2">
+                        <button  class="btn-warning btn-block buttons-page">Register</button>
+                    </div>
+                </div>
+
+                <div class="divider">or</div>
+
+                <div class="BUTTONS">
+                    <div>
+                        <button  class="btn-warning btn-block button-google">Google</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="Register.js"></script>
+    </main>
+</body>
+
+</html>
