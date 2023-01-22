@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!---------Navbar---------->
+    <header>
+        <nav>
+            <div class="logotype">
+                <a href="..."><img src="logo.svg"></a>
+            </div>
+
+            <div class="nav__words">
+                <ul>
+                    <li><a href="...">Программы</a></li>
+                    <li><a href="...">Этапы</a></li>
+                    <li><a href="...">Доверия</a></li>
+                    <li><a href="...">Отзывы</a></li>
+                </ul>
+            </div>
+
+            <div class="lang__sign">
+                <ul>
+                    <li><a href="..." class="language">KZ</a></li>
+                    <li><a href="..." class="voiti">Войти</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!---------Navbar End---------->
+    <main>
+      <!---------Carousel---------->
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+
+            <div class="carousel-inner">
+              <div class="carousel-item active womenss">
+                <img src="women.svg" class="d-block w-100 womens" alt="...">
+                <div class="words_container">
+                  <p class="women_words first_words">Нужен спонсор для открытия бизнеса?</p>
+                </div>
+                <div class="words_container_description">
+                  <p class="women_description">
+                    Государство выдает безвозмездные гранты,<br> мы подготовим для вас бизнес план, <br>что бы повысить
+                    вероятность вашего выигрыша. <br>Грант выдается в конкурсном виде
+                  </p>
+                </div>
+                <div class="women_button">
+                  <a class="consulting">Бесплатная консультация</a>
+                </div>
+              </div>
+
+
+              <div class="carousel-item">
+                <img src="women_talking.svg" class="d-block w-100 talking" alt="...">
+                <div class="words_container second">
+                  <p class="women_words second_words">Хочешь открыть бизнес, но не знаешь с чего начать?</p>
+                </div>
+                <div class="words_container_description second_descp">
+                  <p class="women_description ">
+                      Мы разработаем полный бизнес план под ваши требования
+                  </p>
+                </div>
+                <div class="women_button second_button">
+                  <a class="consulting">Бесплатная консультация</a>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <img src="team.svg" class="d-block w-100 group" alt="...">
+                <div class="words_container second">
+                  <p class="women_words command">Наша Команда</p>
+                </div>
+                <div class="words_container_description third_descp">
+                  <p class="women_description ">
+                      Команда проффесианалов собранная со всего Казахстана. Разработаем самые инновационные Бизнес Планы 
+                  </p>
+                </div>
+                <div class="women_button third_button">
+                  <a class="consulting">Бесплатная консультация</a>
+                </div>
+              </div>
+      
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    <!---------Carousel End---------->
+          <div class="cooperation_companies">
+            <div class="filler"></div>
+            <div class="cooperation_words"><p class="cooperaion_companies__words">Мы сотрудничаем с<br> такими компаниями как</p></div>
+            <img src="damu.svg" alt="Damu company">
+            <img src="samruk.svg" alt="Samruk company">
+            <img src="atameken.svg" alt="Atameken company">
+            <img src="logos-10.svg" alt="company" style="margin-right: 3em;">
+          </div>
+
+          <div class="services">
+            <div class="services_header"><p class="services_words">Наши Услуги</p></div>
+            <div class="services_container_wrapper">
+              <div class="services_container first_cont">
+                <div><p>Участие в Гранте</p></div>
+                <div><p>Предоставления гоусдарственных грантов для реализаций новых Бизнес идей. Участие в 5.000.000 гранте</p></div>
+                <div><a>Узнать подробнее</a></div>
+              </div>
+              <div class="services_container second_cont">
+                <div><p>Сопровождение Документооборота</p></div>
+                <div><p>На протяжений всего процесса конкурса, мы гарантируем вам поддержку с нашей стороны.</p></div>
+                <div><a>Узнать подробнее</a></div>
+              </div>
+              <div class="services_container third_cont">
+                <div><p>Предоставление льготного кредитования и субсидий</p></div>
+                <div><p>Возможность получения льготного потребительского кредитования под 6%, вместо 23%</p></div>
+                <div><a>Узнать подробнее</a></div>
+              </div>
+            </div>
+          </div>
+    </main>
+    <footer>
+
+    </footer>    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+</html>
